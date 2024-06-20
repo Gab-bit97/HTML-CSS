@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <title>Despre HTML-basic</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="body">
+    <ul class="navbar">
+      <a style="text-decoration: none" href="despre.html"
+        >Pagina despre pagina noastra</a
+      >
+      <a style="text-decoration: none" href="tabele.html"
+        >Detalii despre tabele</a
+      >
+      <a style="text-decoration: none" href="formular.html">Formulare</a>
+      <a style="text-decoration: none" href="multimedia.html">Multimedia</a>
+      <a style="text-decoration: none" href="CSS.html">CSS</a>
+    </ul>
+    <section>
+      <h1 class="title">Ce este HTML si cum a aparut?</h1>
+      <hr />
+    </section>
+    <section class="border-1">
+      <p>
+        Tag-urile HTML sunt elementele de bază ale limbajului HTML, care
+        definesc structura și conținutul unei pagini web. Fiecare tag are un rol
+        specific și este format din două părți: un nume și un set de atribute.
+      </p>
+      <p>
+        Pentru a putea ajunge sa construim o pagina web,HTML ne pune la
+        dispozitie o multitudine de instrumente cu ajutorul carora construim
+        'scheletul' paginii respective.Aceste instrumente se numesc
+        tag-uri(tags).
+      </p>
+    </section>
+    <h3 class="title-2">Tag-uri principale in HTML</h3>
+    <div class="container">
+      <section class="border">
+        <ul>
+          <li>
+            Tag-uri de deschidere: marchează începutul unui element HTML. De
+            exemplu,
+            <span style="color: black; font-weight: bold">&ltp&gt</span>
+            marchează începutul unui paragraf.
+          </li>
+          <li>
+            Tag-uri de închidere: marchează sfârșitul unui element HTML. De
+            exemplu,
+            <span style="color: black; font-weight: bold">&lt/p&gt</span>
+            marchează sfârșitul unui paragraf.
+          </li>
+          <li>
+            Tag-uri autoînchise: nu necesită un tag de închidere. De exemplu,
+            <span style="color: black; font-weight: bold">&ltbr&gt</span>
+            introduce un salt de linie.
+          </li>
+        </ul>
+      </section>
+      <section class="border">
+        <p>
+          Unul din cele mai simple tag-uri din HTML este
+          <a href="https://www.w3schools.com/tags/tag_p.asp"
+            ><span style="color: black; font-weight: bold">&ltp&gt</span></a
+          >. Acest tag este unul din cele mai folosite cu ajutorul caruia putem
+          crea paragrafe.
+        </p>
+        <p>
+          Exmplu:
+          <strong><p>&lt;p&gt;Aceasta este o propozitie.&lt;/p&gt;</p></strong>
+          Atunci cand vrem sa adaugam o noua linie de paragraf ne putem ajuta de
+          tag-ul <span style="color: black; font-weight: bold">&ltbr&gt</span>,
+          tag care este unul de sine statator si se foloseste fara tag de
+          inchidere.
+        </p>
+        <p>
+          Inainte de a prezenta si celelalte tag-uri este important sa precizam
+          ca o pagina web nu se poate crea fara tagul
+          <span style="color: black; font-weight: bold"
+            >&lthtml&gt&lthtml/&gt</span
+          >
+          unde se afla tot continutul unei pagini web.Bineinteles ca acest
+          continut trebuie afisat, de aceea ne ajuta
+          <a href="https://www.w3schools.com/tags/tag_body.asp"
+            ><span style="color: black; font-weight: bold">&ltbody&gt</span></a
+          >.
+        </p>
+        <p>
+          Un alt tag important este
+          <span style="color: black; font-weight: bold">&lttitle&gt</span> care
+          ne afiseaza titlul setat de noi in toolbar-ul browser-ului.Legat de
+          titluri putem da nume unui paragraf cu ajutorul tag-ului
+          <a href="https://www.w3schools.com/tags/tag_hn.asp"
+            ><span style="color: black; font-weight: bold">&lth&gt</span></a
+          >
+          numit si heading.Acesta se gaseste in 6 configuratii.
+        </p>
+        <ol class="section2-list">
+          <li>&ltH1&gt</li>
+          <li>&ltH2&gt</li>
+          <li>&ltH3&gt</li>
+          <li>&ltH4&gt</li>
+          <li>&ltH5&gt</li>
+          <li>&ltH6&gt</li>
+        </ol>
+        <p>
+          Cel mai mare heading si cel mai important este h1
+          <strong>&lth1&gt Exemplu de heading 1 &lt/h1&gt</strong> si cel mai
+          mic este h6 <strong>&lth6&gt Exemplu de heading 6 &lt/h6&gt .</strong>
+        </p>
+      </section>
+    </div>
+    <section class="border">
+      <p>
+        In momentul in care vrem sa evidentiem un segment dintr-un paragraf sau
+        pur si simplu un cuvant putem folosi tag-ul
+        <span style="color: black; font-weight: bold">&ltspan&gt</span>.Pentru o
+        organizare adecvata a unei pagini web aceasta trebuie ordonata pe
+        sectiuni.Aceste sectiuni se pot forma cu ajutorul
+        <span style="color: black; font-weight: bold">&ltdiv&gt</span> sau
+        <span style="color: black; font-weight: bold">&ltsection&gt</span>.Sigur
+        ca vrem sa facem pagina noastra interactiva pentru cine o navigheaza asa
+        ca putem adauga si imagini folsind tag-ul
+        <a href="https://www.w3schools.com/tags/tag_img.asp"
+          ><span style="color: black; font-weight: bold">&ltimg&gt</span></a
+        >.Acest tag este de forma
+        <strong>&ltimg src="example.com/example.jpg"&gt&ltimg&gt</strong>.La fel
+        cum putem adauga imagini putem adauga si video folosind tag-ul
+        <span style="color: black; font-weight: bold">&ltvideo&gt</span>.<span
+          style="color: black; font-weight: bold"
+          >"src"</span
+        >
+        reprezinta un atribut cu ajutorul caruia putem controla elementul
+        respectiv.Se pot adauga in pagina noastra web si link-uri catre alte
+        pagini cu ajutorul tagului
+        <span style="color: black; font-weight: bold">&lta&gt</span>.
+      </p>
+      <p>
+        In HTML toate elementele trebuie sa fie formate din tag de deschidere si
+        tag de inchidere.Exista si metode prin care putem anula efectul
+        tag-urilor cu ajutorul altor tag-uri si elemenete specifice.In momentul
+        in care dorin sa exemplificam o sectiune de cod HTML in pagina noastra o
+        putem incadra intre tag-urile
+        <span style="color: black; font-weight: bold">&ltxmp&gt&lt/xmp&gt</span
+        >.Uneori avem nevoie de a afisa chiar tag-urile in sine de aceea ne
+        putem ajuta de "&amplt(less than), &ampgt(greater than)".Toate acestea
+        prezentate anterior se numesc escape sequences/characters.
+      </p>
+    </section>
+
+    <p>
+      Mai multe informatii despre tag-uri, elemente si escape characters se pot
+      gasi in link-urile urmatoare
+      <a href="https://www.geeksforgeeks.org/div-tag-html/">Tags and elemtns</a>
+      sau
+      <a href="https://mateam.net/html-escape-characters/">Escape characters</a>
+    </p>
+  </body>
+</html>

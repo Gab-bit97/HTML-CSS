@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Elemente multimedia in HTML</title>
+    <link rel="stylesheet" href="stylemulti.css" />
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="CSS.html">CSS</a></li>
+      <li><a href="index.html">HTML</a></li>
+      <li><a href="formular.html">Formulare</a></li>
+      <li><a href="tabele.html">Tabele</a></li>
+    </ul>
+    <section>
+      <h1>HTML Multimedia</h1>
+      <hr />
+      <p>
+        HTML ofera mai multe modalitati de a afisa continut multimedia ca
+        imagini, fisiere audio si video.
+      </p>
+      <h2>Imaginile</h2>
+      <p>
+        Tag-ul specific pentru imagini este &ltimg&gt.Ca sa putem afisa o
+        imagine in pagina noastra web vom folosi sintaxa urmatoare:
+      </p>
+      <xmp><img src="" alt=""></xmp>
+      <p>
+        In elementul precedent apar doua atribute "src" si "alt". Prin
+        intermediul atributului "src" punem la dispozitie calea prin care putem
+        accesa imagina ce urmeaza a fi afisata iar "alt" ne ofera posibilitatea
+        de a atribui un text imaginii.
+      </p>
+      <p>
+        Aici putem observa ca tag-ul &ltimg&gt este unul de sine statator si nu
+        are un tag de inchidere.
+      </p>
+      <img src="/imagini/moto.jpg" width="500px" />
+    </section>
+    <section>
+      <h2>Audio & Video</h2>
+      <p>
+        Fisierele audio sunt afisate folosind tag-ul &ltaudio&gt insotit de
+        tag-ul de inchidere &lt/audio&gt.Elementul care descrie un fisier audio
+        este:
+        <xmp><audio src="muzica.mp3"></audio></xmp>
+      </p>
+      <p>
+        Vor aparea probleme din cauza ca browser-ul nu avea accepta toate
+        formatele audio de aceea v-a trebui sa precizam formatul fisierului
+        audio prin atributul suplimentar "type".Browser-ul isi poate selecta
+        singur tipul de fisier audio pe care il suporta cu ajutorul tag-ului
+        &ltsource&gt.Fisierele audio trebuie sa aiba neaparat butoanele de
+        play,pause sau volum pentru a controla difuzarea lor.Aceste comenzi le
+        putem, afisa cu atributul "controls".
+      </p>
+      <audio
+        controls
+        src="imagini/audio - video/Headlands - National Sweetheart.mp3"
+      ></audio>
+      <p>
+        In cazul fisierelor video putem proceda la fel ca la cele audio doar ca
+        se mai adauga doua atribute.Pentru ca un fisier video sa fie rulat fara
+        imperfectiuni trebuie setata o latime si inaltime.Putem face asta
+        folosind atributele width si height.
+      </p>
+      <video controls width="500px"
+        src="imagini/audio - video/WhatsApp Video 2024-06-17 at 22.40.23_6a25501a.mp4"
+      >
+    </section>
+  </body>
+</html>

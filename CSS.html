@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <title>CSS-notiuni introductive</title>
+    <link rel="stylesheet" href="style-css.css" />
+  </head>
+  <ul class="navbar">
+    <a style="text-decoration: none" href="despre.html"
+      >Pagina despre pagina noastra</a
+    >
+    <a style="text-decoration: none" href="tabele.html"
+      >Detalii despre tabele</a
+    >
+    <a style="text-decoration: none" href="formular.html">Formulare</a>
+    <a style="text-decoration: none" href="multimedia.html">Multimedia</a>
+  </ul>
+  <h2>CSS-introducere</h2>
+  <body>
+    <p style="margin-bottom: 5px">
+      CSS (Cascading Style Sheets) este limbajul utilizat pentru a proiecta și
+      formata paginile web.Permite să separați conținutul paginii (HTML) de
+      prezentarea sa vizuală (CSS), ceea ce face codul mai lizibil și mai ușor
+      de gestionat.
+    </p>
+    <div>
+      <section>
+        <h4>Ce poate fi realizat cu CSS?</h4>
+        <ul>
+          <li>
+            Controlul asupra fontului: Putem modifica tipul de font,
+            dimensiunea, greutatea și culoarea textului.
+          </li>
+          <li>
+            Stiluri de paragraf: Reglam spațierea dintre paragrafe, indentarea
+            și aliniamentul textului.
+          </li>
+          <li>
+            Scheme de culori: Definim o paletă de culori pentru fundaluri, text
+            și alte elemente.
+          </li>
+          <li>
+            Layout-uri: Poziționam elemente pe pagină, generam coloane și
+            structuram conținutul.
+          </li>
+          <li>
+            Margini și paddinguri: Adăugam spații în jurul elementelor pentru o
+            lizibilitate mai bună.
+          </li>
+          <li>Borduri: Realizam contururi decorative în jurul elementelor.</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Cum funcționează CSS?</h4>
+        <p>
+          CSS folosește un sistem de reguli format din două părți: selectori și
+          declarații.
+        </p>
+        <ul>
+          <li>
+            Selectorii identifică elementul HTML pe care doriți să îl stilizați.
+            Poate fi un tag HTML specific (ex:&ltp&gt pentru paragraf), o clasă
+            (un identificator personalizat pe care îl adăugați la un element)
+            sau un ID (un identificator unic pentru un element).
+          </li>
+          <li>
+            Declarațiile definesc proprietățile stilului (ex:culoare, font) și
+            valorile acestora (ex:"albastru", "Arial").
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4>Unde se stochează CSS?</h4>
+        <ul>
+          <li>
+            <strong>Stiluri inline: </strong>Stilurile sunt definite direct în
+            tag-urile HTML folosind atributul &ltstyle&gt. Acestea sunt utile
+            pentru modificări minore, dar pot aglomera codul HTML.
+          </li>
+          <li>
+            <strong>Foi de stil interne: </strong>Stilurile sunt plasate într-un
+            element &ltstyle&gt în head-ul documentului HTML. Această metodă
+            este utilă pentru stiluri specifice paginii.
+          </li>
+          <li>
+            <strong>Foi de stil externe: </strong>Stilurile sunt stocate într-un
+            fișier CSS separat (.css). Acestea sunt reutilizabile pe mai multe
+            pagini web, menținând codul organizat.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          Proprietățile CSS sunt elementele de bază care definesc exact cum va
+          arăta un element HTML. Acestea acoperă o gamă largă de aspecte
+          vizuale, inclusiv:
+        </p>
+        <ul>
+          <li>
+            <strong>Proprietăți de text:</strong>Acestea controlează lucruri
+            precum culoarea textului, familia fontului, dimensiunea fontului,
+            greutatea fontului etc. Exemple: color, font-family, font-size,
+            font-weight.
+          </li>
+          <li>
+            <strong>Proprietăți de fundal:</strong>Acestea definesc culoarea sau
+            imaginea de fundal a unui element. Exemple: background-color,
+            background-image.
+          </li>
+          <li>
+            <strong>Proprietăți de margini și padding:</strong>Marginile și
+            padding-ul adaugă spațiu în jurul conținutului unui element.
+            Exemple: margin, padding.
+          </li>
+          <li>
+            <strong>Proprietăți de border:</strong>Bordurile definesc o linie în
+            jurul unui element. Puteți controla grosimea, stilul și culoarea
+            bordurii. Exemple: border-width, border-style, border-color.
+          </li>
+          <li>
+            <strong>Proprietăți de dimensiune și poziție: </strong>Acestea
+            controlează dimensiunea și poziția elementelor pe pagină. Exemple:
+            width, height, position, top, left.
+          </li>
+          <li>
+            <strong>Alte proprietăți:</strong>Există multe alte proprietăți CSS
+            care controlează diferite aspecte ale aspectului unui element, cum
+            ar fi umbrele, rotunjirea colțurilor, opacitatea etc.
+          </li>
+        </ul>
+      </section>
+
+      <p>
+        Felxbox nu este o proprietate CSS propriu-zisa, ci mai degraba o
+        abreviere pentru "Flexbox" - un model de layout puternic folosit in CSS.
+      </p>
+      <p>
+        Flexbox oferă o modalitate mai eficientă de a aranja, alinia și
+        distribui spațiul între elementele dintr-un container, chiar și atunci
+        când dimensiunile lor sunt necunoscute sau dinamice.
+      </p>
+      <p>Iată câteva proprietăți cheie ale Flexbox:</p>
+      <ul class="last-section">
+        <li>
+          <p>
+            <strong>display: flex:</strong> Transformă un element HTML dintr-un
+            container normal într-un container flex.
+          </p>
+          <img src="/imagini/img 2.PNG" width="100px" />
+        </li>
+        <li>
+          <p>
+            <strong>flex-direction: </strong>Specifică direcția principală în
+            care sunt așezate elementele flex (în rând - row sau coloană -
+            column).
+          </p>
+          <img src="/imagini//img 3.PNG" width="100px" />
+        </li>
+        <li>
+          <p>
+            <strong>justify-content:</strong>Aliniază elementele flex pe axa
+            principală (spre stânga, centru, dreapta etc.).
+          </p>
+          <img src="/imagini/img 4.PNG" width="120px" />
+          <img src="/imagini/img 5.PNG" width="120px" />
+          <img src="/imagini/img 6.PNG" width="120px" />
+          <img src="/imagini/img 7.PNG" width="120px" />
+        </li>
+        <li>
+          <p>
+            <strong>align-items:</strong>Aliniază elementele flex pe axa
+            transversală (sus, centru, jos etc.).
+          </p>
+          <img src="/imagini/img 10.PNG" width="120px" />
+        </li>
+        <li>
+          <p>
+            <strong>flex-wrap: </strong>Specifică dacă elementele flex ar trebui
+            să se încadreze pe un singur rând sau să se ruleze pe mai multe
+            rânduri.
+          </p>
+          <img src="/imagini/img 11.PNG" width="120px" />
+        </li>
+        <li>
+          <p>
+            <strong>flex-grow:</strong>Permite unui element flex să se extindă
+            pentru a umple spațiul disponibil.
+          </p>
+          <img src="/imagini/img 12.PNG" width="120px" />
+        </li>
+        <li>
+          <p>
+            <strong>flex-shrink: </strong>Permite unui element flex să se
+            micșoreze pentru a se potrivi spațiului disponibil.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

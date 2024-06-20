@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Formulare</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="navigation">
+      <a style="text-decoration: none" href="index.html">Acasa</a>
+      <a style="text-decoration: none" href="../despre.html">Despre</a>
+      <a style="text-decoration: none" href="tabele.html">Tabele</a>
+    </ul>
+    <h1>Formulare</h1>
+    <form>
+      <label for="persoana">Numele:</label>
+      <input
+        type="text"
+        placeholder="Introduceti numele"
+        id="persoana"
+        name="nume"
+      />
+      <br />
+      <label for="persoana">Prenumele:</label>
+      <input
+        type="text"
+        placeholder="Introduceti prenumele"
+        id="persoana"
+        name="prenume"
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        placeholder="Introduceti email"
+        name="email"
+        id="email"
+      />
+      <br />
+      <label for="parola">Parola:</label>
+      <input
+        type="password"
+        placeholder="Introduceti Parola"
+        name="parola"
+        id="parola"
+      />
+      <br />
+      <label for="bifaCampanie">Trimite campanii de marketing pe email</label>
+      <input type="checkbox" id="bifaCampanie" name="campanie" />
+      <div>
+        <label>Sunteti deacord cu procesarea datelor personale?</label>
+        <br />
+        <label for="procesareDate1">Da</label>
+        <input
+          type="radio"
+          name="procesareDate"
+          id="procesareDate1"
+          value="da"
+        />
+        <label for="procesareDate2">Nu</label>
+        <input
+          type="radio"
+          name="procesareDate"
+          id="procesareDate2"
+          value="nu"
+        />
+      </div>
+      <!-- <input type="submit" value="Trimite" /> -->
+      <button>Trimite</button>
+      <button type="button">Nu trimite</button>
+    </form>
+  </body>
+</html>
