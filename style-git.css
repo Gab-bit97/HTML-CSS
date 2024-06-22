@@ -16,6 +16,10 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+
+strong {
+  text-align: center;
+}
 @media (max-width: 600px) {
   .flex-list {
     display: block;
