@@ -1,0 +1,23 @@
+.navbarr {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: grey;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+a {
+  color: black;
+}
+html {
+  background-image: url(/imagini/bg1.jpg);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.custom {
+  text-align: center;
+}
