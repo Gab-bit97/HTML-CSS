@@ -3,4 +3,11 @@
   justify-content: space-evenly;
   gap: 30px;
   align-items: center;
+  border: solid greenyellow 3px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a {
+  color: green;
 }
