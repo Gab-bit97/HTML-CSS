@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <title>Terminal and SSH key</title>
+    <link />
+  </head>
+  <body>
+    <p>
+      Visual Studio Code (VS Code) este un editor de cod sursă puternic și
+      popular, dezvoltat de Microsoft. Printre numeroasele sale caracteristici
+      se numără integrarea unui terminal încorporat, care permite
+      dezvoltatorilor să execute comenzi shell direct din editor. Această
+      funcționalitate este esențială pentru o dezvoltare eficientă, permițând
+      rularea de scripturi, instalarea de pachete și gestionarea depozitelor de
+      cod, toate fără a părăsi mediul de lucru.
+    </p>
+    <div>
+      <h2>Accesarea Terminalului în VS Code</h2>
+      <section>
+        <h3>1.Deschiderea Terminalului</h3>
+        <p>
+          Poți deschide terminalul integrat în VS Code prin mai multe metode:
+        </p>
+        <ul>
+          <li>
+            <b>Meniu:</b> Navighează la <b>"View"</b> > <b>"Terminal" </b> in
+            bara de meniu.
+          </li>
+          <li>
+            <b>Scurtătură de la Tastatură:</b> Apasă
+            <b>"Ctrl + `(accent grav)"</b> pe Windows/Linux sau
+            <b>"Cmd + `"</b> pe macOS.
+          </li>
+          <li>
+            <b>Paleta de Comenzi:</b> Apasă
+            <b>"Ctrl + Shift + P"</b> (Windows/Linux) sau
+            <b>"Cmd + Shift + P"</b>(macOS) pentru a deschide paleta de comenzi,
+            apoi tastează <b>"Toggle Terminal"</b>.
+          </li>
+        </ul>
+        <h3>2.Crearea de ferestre de lucru in Terminal</h3>
+        <p>
+          Poți crea mai multe instanțe de terminal pentru a lucra cu diverse
+          sesiuni sau medii de lucru:
+        </p>
+        <ul>
+          <li>
+            <b>Butonul "+":</b> Dă clic pe butonul „+” din partea dreaptă a
+            filei terminalului.
+          </li>
+          <li>
+            <b>Scurtătură de la Tastatură:</b> Apasa
+            <b>"Ctrl + Shift + `"</b> pe Windows/Linux sau
+            <b>"Cmd + Shift + `" </b> pe macOS.
+          </li>
+        </ul>
+        <h3>3. Navigarea intre ferstrele de lucru din Terminal</h3>
+        <ul>
+          <li>
+            <b>Clic pe Filele Terminalului:</b> Dă clic pe fila terminalului
+            dorit.
+          </li>
+          <li>
+            <b>Scurtături de la Tastatură:</b
+            ><b> Folosește <b>"Ctrl + Pagina Sus/Pagina Jos"</b> </b>
+            (Windows/Linux) sau
+            <b>"Cmd + Alt + Săgeată Stânga/Dreapta"</b> (macOS).
+          </li>
+        </ul>
+        <h3>4.Închiderea unui Terminal</h3>
+        <ul>
+          <li>
+            <b>Butonul „Coș de Gunoi”:</b> Dă clic pe pictograma coșului de
+            gunoi din partea dreaptă a filei terminalului.
+          </li>
+          <li>
+            <b>Scurtături de la Tastatură:</b> Apasă
+            <b>"Ctrl + W"</b> (Windows/Linux) sau <b>"Cmd + W"</b> (macOS).
+          </li>
+        </ul>
+      </section>
+      <h2>Configurarea Terminalului</h2>
+      <section>
+        <p>
+          VS Code permite configurarea terminalului pentru a utiliza diverse
+          shell-uri și a personaliza comportamentul acestuia.
+        </p>
+        <h3>1.Selectarea Shell-ului Preferat</h3>
+        <p>
+          VS Code suportă diverse shell-uri precum Command Prompt, PowerShell,
+          Bash, Zsh, și multe altele. Poți alege shell-ul preferat din setările
+          VS Code:
+        </p>
+        <div>
+          <p>"terminal.integrated.shell.windows":</p>
+          <p>"C:\\Windows\\System32\\cmd.exe",</p>
+          <p>"terminal.integrated.shell.linux": "/bin/bash",</p>
+          <p>"terminal.integrated.shell.osx": "/bin/zsh"</p>
+        </div>
+        <h3>2.Setarea Shell-ului Implicit</h3>
+        <p>Poți seta shell-ul implicit folosit de terminal:</p>
+        <ul>
+          <li>
+            <b>Paleta de Comenzi:</b> Apasă
+            <b>"Ctrl + Shift + P"</b> (Windows/Linux) sau
+            <b>"Cmd + Shift + P"</b> (macOS) pentru a deschide paleta de
+            comenzi.
+          </li>
+          <li>
+            <b>Comanda:</b> Tasteaza <b>"Terminal:Select Default Shell"</b> și
+            selectează shell-ul dorit.
+          </li>
+        </ul>
+        <h3>3.Personalizarea Terminalului.</h3>
+        <p>
+          Terminalul integrat în VS Code poate fi personalizat pentru a se
+          potrivi preferințelor tale:
+        </p>
+        <div>
+          <p>"terminal.integrated.fontSize": 14,</p>
+          <p>"terminal.integrated.fontFamily": "Courier New",</p>
+          <p>"terminal.integrated.cursorBlinking": true,</p>
+          <p>"terminal.integrated.cursorStyle": "block",</p>
+          <p>"terminal.integrated.background": "#1E1E1E",</p>
+          <p>"terminal.integrated.foreground": "#CCCCCC"</p>
+        </div>
+      </section>
+      <h2>Utilizarea Terminalului Integrat</h2>
+      <section>
+        <h3>1.Executarea de Comenzi</h3>
+        <p>
+          Terminalul integrat permite executarea de comenzi de shell exact ca un
+          terminal standalone. Poți instala pachete, compila cod, și gestiona
+          fișiere direct din terminal.
+        </p>
+        <p><i>ls:</i>Listarea fișierelor din directorul curent.</p>
+        <p><i>cd:</i> Schimbarea directorului.</p>
+        <p><i>mkdir:</i> Crearea unui nou director.</p>
+        <p><i>rm:</i> Stergerea unui fisier sau director.</p>
+        <p><i>git status:</i> Verificarea statusului git.</p>
+
+        <h3>2.Navigarea și Gestionarea Fișierelor</h3>
+        <p>
+          Poți folosi terminalul pentru a naviga prin sistemul de fișiere și a
+          efectua operațiuni de gestionare a fișierelor, cum ar fi crearea,
+          ștergerea sau mutarea fișierelor și directoarelor.
+        </p>
+        <p><i>cd:</i> Navighează către un director specific</p>
+        <p><i>mkdir:</i> Creează un nou director</p>
+        <p><i>touch:</i> Creează un fișier nou</p>
+        <p><i>rm:</i> Șterge un fișier</p>
+        <p><i>mv:</i> Mută un fișier către un alt director</p>
+      </section>
+    </div>
+    <div>
+      <h2>Utilizarea SSH pentru a Gestiona Repozitoriile GitHub</h2>
+      <p>
+        SSH (Secure Shell) este un protocol de rețea care permite transferuri de
+        date criptate și administrare securizată la distanță. În contextul
+        GitHub, SSH este folosit pentru a securiza comunicarea între
+        calculatorul tău și serverele GitHub. Utilizarea SSH în loc de HTTPS
+        pentru a clona repoziții Git sau a efectua operațiuni de push/pull are
+        numeroase avantaje, inclusiv securitate sporită și eliminarea
+        necesității de a introduce frecvent parola.
+      </p>
+      <h3>De ce să folosești SSH cu GitHub?</h3>
+      <ul>
+        <li>
+          <b>Securitate:</b> Comunicarea criptată previne interceptarea datelor.
+        </li>
+        <li>
+          <b>Eficiență:</b> Odată configurată, autentificarea SSH elimină
+          necesitatea de a introduce parola GitHub pentru fiecare operațiune.
+        </li>
+        <li>
+          <b>Acces rapid:</b> SSH permite transferuri mai rapide de date, în
+          special pentru operațiuni mari de push și pull.
+        </li>
+      </ul>
+      <h2>Pași pentru Configurarea SSH cu GitHub</h2>
+      <h3>1.Verifică Existenta unei Chei SSH</h3>
+      <p>
+        Înainte de a crea o nouă cheie SSH, verifică dacă ai deja una
+        configurată pe sistemul tău.
+      </p>
+      <p>
+        Dacă vezi fișiere precum <b>"id_rsa"</b> și <b>"id_rsa.pub"</b>,
+        înseamnă că ai deja o cheie SSH.
+      </p>
+      <h3>2.Crearea unei Noi Chei SSH (Dacă Este Necesar)</h3>
+      <ul>
+        <li>
+          <b>Introduceți locația de stocare:</b> De obicei, locația implicită
+          <b>"(~/.ssh/id_ed25519)"</b> este suficientă.
+        </li>
+        <li>
+          <b>Introduceți o parolă:</b> Acest pas este opțional, dar recomandat
+          pentru securitate suplimentară.
+        </li>
+      </ul>
+      <h3>3.Adăugarea Cheii SSH la Agentul SSH</h3>
+      <p>
+        Pentru a gestiona și utiliza cheile SSH, trebuie să le adaugi la
+        <b>"ssh-agent"</b>: <i>ssh-add ~/ .ssh.id_ed25519</i>
+      </p>
+      <p>
+        Asigură-te că folosești locația corectă a cheii tale dacă ai ales o
+        locație personalizată.
+      </p>
+      <h3>4.Adăugarea Cheii SSH la Contul GitHub</h3>
+      <p>Pentru a permite GitHub să recunoască și să accepte cheia ta SSH:</p>
+      <p>
+        <b>Copiază cheia publică:</b> Folosește comanda de mai jos pentru a
+        copia conținutul cheii publice în clipboard.
+      </p>
+      <p><i>cat</i> ~/.ssh/id_ed25519.pub</p>
+    </div>
+  </body>
+</html>
