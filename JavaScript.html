@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Java Script intro</title>
-    <link />
+    <link rel="stylesheet" href="style-js.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -15,34 +15,73 @@
     </p>
     <h2>Sintaxa de Bază în JavaScript</h2>
     <b>Declarația de Variabile</b>
-    <p>
-      JavaScript folosește <b>"var"</b>, <b>"let"</b>, și <b>"const"</b> pentru
-      a declara variabile:
-    </p>
-    <ul>
-      <li>
-        <b>"var"</b> este folosit pentru declarații cu scop global sau
-        funcțional (în funcție de context).
-      </li>
-      <li>
-        <b>"let"</b> si <b>"const"</b> sunt preferate în codul modern pentru că
-        au scope de bloc. <b>"const"</b> este folosit pentru variabilele care nu
-        ar trebui să fie reatribuite.
-      </li>
-    </ul>
+    <div class="container1">
+      <div>
+        <p>
+          JavaScript folosește <b>"var"</b>, <b>"let"</b>, și
+          <b>"const"</b> pentru a declara variabile:
+        </p>
+        <ul>
+          <li>
+            <b>"var"</b> este folosit pentru declarații cu scop global sau
+            funcțional (în funcție de context).
+          </li>
+          <li>
+            <b>"let"</b> si <b>"const"</b> sunt preferate în codul modern pentru
+            că au scope de bloc. <b>"const"</b> este folosit pentru variabilele
+            care nu ar trebui să fie reatribuite.
+          </li>
+        </ul>
+      </div>
+      <div class="stylediv">
+        <p>
+          <b style="color: blue">var</b> nume=<b style="color: green"
+            >"Alice"</b
+          >
+        </p>
+        <p>
+          <b style="color: blue">let</b> varsta=<b style="color: red">30</b>
+        </p>
+        <p>
+          <b style="color: blue">const</b> PI=<b style="color: red">3.14</b>
+        </p>
+      </div>
+    </div>
     <b>Tipuri de date</b>
     <p>JavaScript suporta mai multe tipuri de date primitive</p>
-    <ul>
-      <li><b>"Number"</b>: pentru numere</li>
-      <li><b>"String"</b>: pentru text</li>
-      <li>
-        <b>"Boolean"</b>: pentru valori adevarat sau fals(<b>"true"</b> sau
-        <b>"false"</b>)
-      </li>
-      <li><b>"Null"</b>: pentru valori nule</li>
-      <li><b>"Undefined"</b>: pentru valori declarate dar fara valoare</li>
-      <li><b>"Symbol"</b>: pentru identificatori unici</li>
-    </ul>
+    <div class="container1">
+      <div>
+        <ul>
+          <li><b>"Number"</b>: pentru numere</li>
+          <li><b>"String"</b>: pentru text</li>
+          <li>
+            <b>"Boolean"</b>: pentru valori adevarat sau fals(<b>"true"</b> sau
+            <b>"false"</b>)
+          </li>
+          <li><b>"Null"</b>: pentru valori nule</li>
+          <li><b>"Undefined"</b>: pentru valori declarate dar fara valoare</li>
+          <li><b>"Symbol"</b>: pentru identificatori unici</li>
+        </ul>
+      </div>
+      <div class="stylediv">
+        <p>
+          <b style="color: blue">let</b> numar= <b style="color: red">25</b>
+        </p>
+        <p>
+          <b style="color: blue">let</b> text=
+          <b style="color: green">"Tetx"</b>
+        </p>
+        <p>
+          <b style="color: blue">let</b> esteAdevarat=
+          <b style="color: blue">true</b>
+        </p>
+        <p>
+          <b style="color: blue">let</b> valoareNula=
+          <b style="color: blue">null</b>
+        </p>
+        <p><b style="color: blue">let</b> nedefinit</p>
+      </div>
+    </div>
     <b>Operatorii</b>
     <p>
       Operatorii sunt folositi pentru a efectua operatii pe variabile si valori:
