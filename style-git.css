@@ -1,5 +1,5 @@
 html {
-  background-image: url(/imagini/bg.jpg);
+  background-image: url(./imagini/bg.jpg);
 }
 .navbar a {
   text-decoration: none;
