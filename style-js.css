@@ -1,0 +1,13 @@
+.container1 {
+  display: flex;
+  gap: 15px;
+}
+
+.stylediv {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px;
+  background-color: lightgray;
+}
