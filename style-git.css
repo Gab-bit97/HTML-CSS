@@ -1,6 +1,24 @@
 html {
   background-image: url(/imagini/bg.jpg);
 }
+.navbar a {
+  text-decoration: none;
+  color: burlywood;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  background: slategray;
+}
+
 div {
   display: block;
   font-size: 15px;
